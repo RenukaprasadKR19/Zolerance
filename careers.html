@@ -1,0 +1,24 @@
+<!-- Career Page HTML -->
+<section id="contact" class="contact-section" style="padding:50px; background-color:#f5f5f5; text-align:center;">
+  <h2 id="contact-title">Contact Us</h2>
+  <p id="contact-text">For career opportunities or inquiries, email us at:</p>
+  <div id="contact-email"></div>
+</section>
+
+<script>
+// JavaScript to add email dynamically
+const email = "Zolerance.tech@gmail.com";
+const emailContainer = document.getElementById("contact-email");
+
+// Create the clickable email link
+const emailLink = document.createElement("a");
+emailLink.href = `mailto:${email}`;
+emailLink.textContent = email;
+emailLink.style.fontSize = "1.2em";
+emailLink.style.color = "#007bff";
+emailLink.style.textDecoration = "none";
+emailLink.style.fontWeight = "bold";
+
+// Append it to the container
+emailContainer.appendChild(emailLink);
+</script>
